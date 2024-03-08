@@ -60,8 +60,7 @@ name = "substitute"
 version = "0.1.0"
 
 [dependencies]
-stdlib.git = "https://github.com/fortran-lang/stdlib"
-stdlib.branch = "stdlib-fpm"
+stdlib = "*"
 ```
 
 
@@ -78,7 +77,7 @@ The *test-drive* package is added in the *dev-dependencies* table as shown below
 :language: toml
 :caption: fpm.toml
 :lines: 1-10
-:emphasize-lines: 8-10
+:emphasize-lines: 7-9
 ```
 
 :::{note}
@@ -112,7 +111,7 @@ This can be used for adding a command line interface package, which is only used
 ```{literalinclude} ../../src/tutorial/dependencies/fpm.toml
 :language: toml
 :caption: fpm.toml
-:emphasize-lines: 14-15
+:emphasize-lines: 13-14
 ```
 
 We restructure our main program a bit for using [M\_CLI2] to handle the command line input.
@@ -130,14 +129,13 @@ Our final main program looks like
 Again we run a quick check using fpm
 
 ```{code-block} text
-:emphasize-lines: 2, 14
+:emphasize-lines: 2, 12
 ❯ fpm run -- demo substitute fpm.toml
 name = "substitute"
 version = "0.1.0"
 
 [dependencies]
-stdlib.git = "https://github.com/fortran-lang/stdlib"
-stdlib.branch = "stdlib-fpm"
+stdlib = "*"
 
 [dev-dependencies]
 test-drive.git = "https://github.com/fortran-lang/test-drive"

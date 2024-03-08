@@ -117,14 +117,12 @@ Browse references
 
 :::::
 
-## {fa}`cubes` Registry
+## {fa}`cubes` [Registry](registry/index)
 
-There are already many packages available for use with fpm, providing an easily accessible and rich ecosystem of general purpose and high-performance code.
-For a full list of packages checkout the [fpm registry](registry/index).
-New packages can be submitted to the registry [here](https://github.com/fortran-lang/fpm-registry).
+fpm supports local and online registries for downloading dependencies.
+[**Learn more**](registry/index) about the fpm registry and how to use it.
 
-
-## {fa}`newspaper` News
+## {fa}`newspaper` [News](news.md)
 
 Recent events around the Fortran Package Manager, such as new releases, conference talks, and new packages will be announced here.
 
